@@ -81,19 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/check.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/one.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/check.js":
-/*!**********************!*\
-  !*** ./src/check.js ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/one.js":
+/*!********************!*\
+  !*** ./src/one.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var people = [{\n  name: 'Jack',\n  age: 50\n}, {\n  name: 'Michael',\n  age: 9\n}, {\n  name: 'John',\n  age: 40\n}, {\n  name: 'Ann',\n  age: 19\n}, {\n  name: 'Elisabeth',\n  age: 16\n}];\n\nfunction teenager(person) {\n  return person.age > 10 && person.age < 20;\n}\n\nvar thereAreTeenagers = people.some(teenager);\nconsole.log('There are teenagers:', thereAreTeenagers);\n\n//# sourceURL=webpack:///./src/check.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar numbers = [1, 4, 23, -4, 'one', 6, 0, 1.1, 3.1415];\nvar numbersAmplify = numbers.map(function (x) {\n  return parseInt(x) * 4;\n});\nconsole.log(numbersAmplify);\nvar filterEight = numbersAmplify.filter(function (number) {\n  return number >= 8;\n});\nconsole.log(filterEight);\n/* harmony default export */ __webpack_exports__[\"default\"] = (filterEight);\n\n//# sourceURL=webpack:///./src/one.js?");
 
 /***/ })
 
