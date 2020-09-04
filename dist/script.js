@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/one.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/three.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -94,7 +94,31 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar numbers = [1, 4, 23, -4, 'one', 6, 0, 1.1, 3.1415];\nvar numbersAmplify = numbers.map(function (x) {\n  return parseInt(x) * 4;\n});\nconsole.log(numbersAmplify);\nvar filterEight = numbersAmplify.filter(function (number) {\n  return number >= 8;\n});\nconsole.log(filterEight);\n/* harmony default export */ __webpack_exports__[\"default\"] = (filterEight);\n\n//# sourceURL=webpack:///./src/one.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar one = function one() {\n  var numbers = [1, 4, 23, -4, 'one', 6, 0, 1.1, 3.1415];\n  var numbersAmplify = numbers.map(function (x) {\n    return parseInt(x) * 4;\n  }); //console.log(numbersAmplify);\n\n  var filterEight = numbersAmplify.filter(function (number) {\n    return number >= 8;\n  }); //console.log(filterEight);\n\n  return filterEight;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (one);\n\n//# sourceURL=webpack:///./src/one.js?");
+
+/***/ }),
+
+/***/ "./src/three.js":
+/*!**********************!*\
+  !*** ./src/three.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _one_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./one.js */ \"./src/one.js\");\n/* harmony import */ var _two_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./two.js */ \"./src/two.js\");\n\n //console.log(objectToJson());\n\nvar summonModules = function summonModules() {\n  return {\n    \"status\": \"Ok\",\n    \"one\": Object(_one_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(),\n    \"two\": Object(_two_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()\n  };\n};\n\nconsole.log(summonModules());\n\n//# sourceURL=webpack:///./src/three.js?");
+
+/***/ }),
+
+/***/ "./src/two.js":
+/*!********************!*\
+  !*** ./src/two.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar objectToJson = function objectToJson() {\n  var dragon = {\n    name: \"Toothless\",\n    race: \"Night Fury\",\n    island: \"Berk\"\n  };\n  var objJson = JSON.stringify(dragon);\n  return objJson;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (objectToJson);\n\n//# sourceURL=webpack:///./src/two.js?");
 
 /***/ })
 
